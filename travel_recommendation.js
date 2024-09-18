@@ -16,6 +16,7 @@ xhr.onload = function()
 }
 
 function suggestions() {
+    clearResults();
     let name = document.getElementById('cityInput').value.split(',');
     console.log(name[0])
     countries.forEach(function(country) { 
