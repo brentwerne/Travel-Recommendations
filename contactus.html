@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bob's Travel Guide</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <style>
+
+        /* Some basic styling for demonstration purposes */
+        #contactForm {
+          max-width: 400px;
+          margin-left: 5%;
+        }
+        #contactForm input,
+        #contactForm textarea {
+          width: 100%;
+          margin-bottom: 15px;
+          padding: 8px;
+        }
+        #contactForm button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        #contactForm button:hover {
+          background-color: #0056b3;
+        }
+      </style>
+</head>
+<body>
+    <nav>
+        <h1> Bob's Travel Guide<h1>
+        <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+        <li><a href="./aboutus.html" id="aboutus">About Us </a></li>
+        <li><a href="./contactus.html" id="contactus">Contact Us </a></li>
+        <li><input type="text" id="conditionInput" placeholder="Enter a health condition">  </li>
+        <li><button id='btnSearch'>Search</button></li>
+        <li><button id='btnReset'>Reset</button></li>
+        </ul>
+    </nav>
+    <div id="aboutTitle"><b>Contact Us</b></div>
+    <form id="contactForm">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="condition">Condition</label>
+          <input type="text" id="condition" name="condition" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" onclick="thankyou()">Submit</button>
+      </form>
+      <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+      </script>
+</body>
+</html>

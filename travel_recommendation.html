@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bob's Travel Guide</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+    <nav>
+        <h1> Bob's Travel Guide<h1>
+        <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+        <li><a href="./aboutus.html" id="aboutus">About Us </a></li>
+        <li><a href="./contactus.html" id="contactus">Contact Us </a></li>
+        <li><input type="text" id="cityInput" placeholder="Enter a city">  </li>
+        <li><button id='btnSearch' onclick="suggestions()">Search</button></li>
+        <li><button id='btnReset' onclick="clearResults()">Reset</button></li>
+        </ul>
+    </nav>
+    <aside id="cityPopUp">
+
+    </aside>
+    <div id="slogan">
+        Go where the view is breath taking!
+    </div>
+    <div id="punchline">We encourage people to explore places that take your breath away.
+        Don't settle for average, go for stunding!
+    </div>
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
